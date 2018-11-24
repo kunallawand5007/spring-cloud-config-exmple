@@ -29,6 +29,12 @@ Test property chnages :
 
 output will you see the value from propery file
 
+By hitting these url we can check property values 
+
+http://localhost:8888/config-server-client/development 
+
+http://localhost:8888/config-server-client/production
+
 
 Make some change, in the value of the property in the config-server-client-development.properties and check-in in the local git, then hit the http://localhost:8081/read/property again in the browser, You will the old value only.
 
