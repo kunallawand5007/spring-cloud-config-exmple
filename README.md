@@ -21,3 +21,19 @@ we can these promblem with 2 approch
 spring-cloud-config-exmple
 
 This sample example for showing how to used spring cloud config server for externalized property files for different envirnoment
+
+
+Test property chnages :
+
+1. open browser hit URl:http://localhost:8081/read/property
+
+output will you see the value from propery file
+
+
+Make some change, in the value of the property in the config-server-client-development.properties and check-in in the local git, then hit the http://localhost:8080/msg again in the browser, You will the old value only.
+
+To reflect the new value, we need to refresh the configuration by hitting http://localhost:8081/refresh endpoint using POST method from any of the REST client.
+
+We have addded @RefreshScope annotation the Rest Controller that we refresh client service
+   
+
