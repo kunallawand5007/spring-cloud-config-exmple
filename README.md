@@ -30,7 +30,7 @@ Test property chnages :
 output will you see the value from propery file
 
 
-Make some change, in the value of the property in the config-server-client-development.properties and check-in in the local git, then hit the http://localhost:8080/msg again in the browser, You will the old value only.
+Make some change, in the value of the property in the config-server-client-development.properties and check-in in the local git, then hit the http://localhost:8081/read/property again in the browser, You will the old value only.
 
 To reflect the new value, we need to refresh the configuration by hitting http://localhost:8081/refresh endpoint using POST method from any of the REST client.
 
