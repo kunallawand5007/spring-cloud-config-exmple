@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
+@RefreshScope
 public class ClientController {
 
 	@Value("${message}")
 	private String message;
 
 	@RequestMapping(value = "/read/property")
-	@RefreshScope
 	ResponseEntity<String> readPropertyValue() {
 		return new ResponseEntity<>(message, HttpStatus.OK);
 
